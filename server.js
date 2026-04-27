@@ -14,8 +14,7 @@ const PORT = Number(process.env.PORT || 8080);
 const frontendOrigin = process.env.FRONTEND_ORIGIN || "*";
 
 app.use(cors({
-  origin: frontendOrigin,
-  credentials: true
+  origin: "*"
 }));
 
 app.use(express.json());
